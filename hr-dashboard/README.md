@@ -3,6 +3,7 @@
 Welcome to the **HR Dashboard**, a modular and scalable human resource management interface built with **Next.js** inside a **TurboRepo** monorepo architecture. This project is designed with performance, maintainability, and user experience in mind.
 
 ## 🗂️ Monorepo Structure
+```bash
 hr-dashboard/
 ├── apps/
 │ └── hr-dashboard/ # Main Next.js application
@@ -17,6 +18,7 @@ hr-dashboard/
 │ ├── tailwind.config.ts
 │ ├── postcss.config.mjs
 │ └── tsconfig.json
+```
 
 ## 🚀 Setup Instructions
 
@@ -81,12 +83,4 @@ Bookmark trends (mocked data)
 
 ## Screen short
 
-image.png
-
-image.png
-
-image.png
-
-image.png
-
-image.png
+![Dashboard Preview](apps\hr-dashboard\images\Screenshot 2025-05-23 223248.png)
