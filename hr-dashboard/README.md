@@ -83,4 +83,4 @@ Bookmark trends (mocked data)
 
 ## Screen short
 
-![Dashboard Preview](apps\hr-dashboard\images\Screenshot 2025-05-23 223248.png)
+Please visit (apps\hr-dashboard\images\)
