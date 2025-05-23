@@ -64,11 +64,11 @@ export default function UserCard({ user, onToggleBookmark }: UserCardProps) {
             >
               {user.bookmarked ? (
                 <>
-                  <BookmarkCheck className="h-4 w-4 mr-2" /> Saved
+                  <BookmarkCheck className="h-4 w-4 mr-2" /> Bookmarked
                 </>
               ) : (
                 <>
-                  <Bookmark className="h-4 w-4 mr-2" /> Save
+                  <Bookmark className="h-4 w-4 mr-2" /> Bookmark
                 </>
               )}
             </Button>
