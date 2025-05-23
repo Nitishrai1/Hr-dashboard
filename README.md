@@ -93,8 +93,8 @@ Bookmark trends (mocked data)
 
 
 ![image](https://github.com/user-attachments/assets/6458b48f-3757-41ff-98b3-57f74d9ef77c)
+![image](https://github.com/user-attachments/assets/1b87325d-2c63-4035-8cfc-3292e64344ff)
 
-![image](https://github.com/user-attachments/assets/67064ae7-cb65-4f86-9696-1bcc6f4f4323)
 
 
 
