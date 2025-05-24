@@ -25,13 +25,13 @@ hr-dashboard/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/hr-dashboard.git
+git clone https://github.com/Nitishrai1/Hr-dashboard.git
 cd hr-dashboard
 ```
 
 ## 🚀 Install packages
 ```bash
-npm i -f
+npm install
 ```
 
 ## Run the application 
