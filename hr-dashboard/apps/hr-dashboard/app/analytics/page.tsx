@@ -51,15 +51,15 @@ const generatePerformanceDistribution = () => {
 export default function AnalyticsPage() {
   const [departmentRatings, setDepartmentRatings] = useState<any[]>([])
   const [bookmarkTrends, setBookmarkTrends] = useState<any[]>([])
-  const [performanceDistribution, setPerformanceDistribution] = useState<any[]>([])
+  
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate data loading
+    // Simulating data loading
     const loadData = () => {
       setDepartmentRatings(generateDepartmentRatings())
       setBookmarkTrends(generateBookmarkTrends())
-      setPerformanceDistribution(generatePerformanceDistribution())
+      
       setLoading(false)
     }
 
@@ -116,10 +116,10 @@ export default function AnalyticsPage() {
       </div>
 
       <Tabs defaultValue="departments" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="departments">Department Ratings</TabsTrigger>
           <TabsTrigger value="trends">Bookmark Trends</TabsTrigger>
-          <TabsTrigger value="performance">Performance Distribution</TabsTrigger>
+          
         </TabsList>
 
         <TabsContent value="departments" className="mt-6">
@@ -201,32 +201,7 @@ export default function AnalyticsPage() {
           </Card>
         </TabsContent>
 
-        <TabsContent value="performance" className="mt-6">
-          <Card>
-            <CardHeader>
-              <CardTitle>Performance Distribution</CardTitle>
-              <CardDescription>Distribution of employee performance ratings</CardDescription>
-            </CardHeader>
-            <CardContent className="h-[400px]">
-              <ChartContainer
-                config={{
-                  count: {
-                    label: "Employees",
-                    color: "hsl(var(--chart-1))",
-                  },
-                }}
-              >
-                <BarChart data={performanceDistribution} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
-                  <CartesianGrid vertical={false} />
-                  <XAxis dataKey="rating" />
-                  <YAxis />
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                  <Bar dataKey="count" fill="var(--color-count)" radius={4} />
-                </BarChart>
-              </ChartContainer>
-            </CardContent>
-          </Card>
-        </TabsContent>
+       
       </Tabs>
     </div>
   )
