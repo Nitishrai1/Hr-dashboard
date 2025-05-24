@@ -9,7 +9,7 @@ export default function SearchBar() {
   const [localSearch, setLocalSearch] = useState("")
   const { setSearchQuery } = useAppContext()
 
-  // Debounce search input to avoid excessive re-renders
+ 
   useEffect(() => {
     const timer = setTimeout(() => {
       setSearchQuery(localSearch)
