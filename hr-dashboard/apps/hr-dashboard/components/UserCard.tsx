@@ -25,7 +25,7 @@ interface UserCardProps {
 
 export default function UserCard({ user, onToggleBookmark }: UserCardProps) {
   const handlePromote = () => {
-    // This would typically trigger a server action or API call
+ 
     alert(`${user.firstName} ${user.lastName} has been marked for promotion.`)
   }
 

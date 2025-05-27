@@ -8,7 +8,7 @@ import FilterDropdown from "@/components/FilterDropdown"
 import { Button } from "@/components/ui/button"
 import { Loader2 } from "lucide-react"
 
-// Define the User type
+
 interface User {
   id: number
   firstName: string
@@ -20,7 +20,7 @@ interface User {
   bookmarked?: boolean
 }
 
-// Departments for mock data
+
 const departments = ["Engineering", "Marketing", "HR", "Finance", "Sales", "Product", "Design"]
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
 
         const data = await response.json()
 
-        // Transform the data and add mock departments and ratings
+      
         const transformedUsers = data.users.map((user: any) => ({
           id: user.id,
           firstName: user.firstName,
@@ -64,7 +64,7 @@ export default function Home() {
     fetchUsers()
   }, [state.bookmarkedUsers])
 
-  // Filter users based on search query and filters
+
   const filteredUsers = users.filter((user) => {
     const matchesSearch =
       state.searchQuery === "" ||

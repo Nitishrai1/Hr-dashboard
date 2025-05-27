@@ -11,12 +11,12 @@ export default function Sidebar() {
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  // Close mobile menu when path changes
+  
   useEffect(() => {
     setIsMobileMenuOpen(false)
   }, [pathname])
 
-  // Close mobile menu when screen size changes to desktop
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
@@ -53,7 +53,6 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Mobile Menu Button */}
       <Button
         variant="ghost"
         size="icon"
@@ -63,7 +62,6 @@ export default function Sidebar() {
         {isMobileMenuOpen ? <X /> : <Menu />}
       </Button>
 
-      {/* Sidebar for mobile */}
       <div
         className={`fixed inset-0 z-40 transform bg-background/80 backdrop-blur-sm transition-all duration-300 md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
@@ -105,7 +103,6 @@ export default function Sidebar() {
         </div>
       </div>
 
-      {/* Sidebar for desktop */}
       <div className="hidden md:flex md:flex-col md:w-64 md:min-h-screen border-r bg-background">
         <div className="flex items-center justify-center h-16 px-4 border-b">
           <Link href="/" className="flex items-center">
