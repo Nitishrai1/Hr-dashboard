@@ -11,6 +11,8 @@ import { Loader2, MapPin, Phone, Mail, Bookmark, BookmarkCheck } from "lucide-re
 import StarRating from "@/components/StarRating"
 import Link from "next/link"
 
+
+
 const mockProjects = [
   { id: 1, name: "Website Redesign", status: "In Progress", completion: 75 },
   { id: 2, name: "Employee Onboarding System", status: "Completed", completion: 100 },
@@ -388,7 +390,9 @@ export default function EmployeeDetails() {
                 ))}
               </div>
             </CardContent>
+            
           </Card>
+
         </TabsContent>
       </Tabs>
     </div>
