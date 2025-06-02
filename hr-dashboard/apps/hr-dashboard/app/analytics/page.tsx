@@ -38,15 +38,7 @@ const generateBookmarkTrends = () => {
 }
 
 
-const generatePerformanceDistribution = () => {
-  return [
-    { rating: "1 Star", count: Math.floor(Math.random() * 5) + 1 },
-    { rating: "2 Stars", count: Math.floor(Math.random() * 10) + 5 },
-    { rating: "3 Stars", count: Math.floor(Math.random() * 15) + 15 },
-    { rating: "4 Stars", count: Math.floor(Math.random() * 15) + 10 },
-    { rating: "5 Stars", count: Math.floor(Math.random() * 10) + 5 },
-  ]
-}
+
 
 export default function AnalyticsPage() {
   const [departmentRatings, setDepartmentRatings] = useState<any[]>([])
@@ -55,7 +47,7 @@ export default function AnalyticsPage() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Simulating data loading
+   
     const loadData = () => {
       setDepartmentRatings(generateDepartmentRatings())
       setBookmarkTrends(generateBookmarkTrends())
@@ -141,7 +133,7 @@ export default function AnalyticsPage() {
                   },
                 }}
               >
-                <BarChart data={departmentRatings} margin={{ top: 20, right: 30, left: 20, bottom: 70 }}>
+                <BarChart data={departmentRatings} margin={{ top: 20, right: 30, left: 20, bottom: 185 }}>
                   <CartesianGrid vertical={false} />
                   <XAxis dataKey="department" angle={-45} textAnchor="end" height={70} tickMargin={20} />
                   <YAxis yAxisId="left" orientation="left" stroke="var(--color-avgRating)" />
@@ -174,7 +166,7 @@ export default function AnalyticsPage() {
                   },
                 }}
               >
-                <LineChart data={bookmarkTrends} margin={{ top: 20, right: 30, left: 20, bottom: 20 }}>
+                <LineChart data={bookmarkTrends} margin={{ top: 20, right: 30, left: 20, bottom: 195 }}>
                   <CartesianGrid vertical={false} />
                   <XAxis dataKey="month" />
                   <YAxis />

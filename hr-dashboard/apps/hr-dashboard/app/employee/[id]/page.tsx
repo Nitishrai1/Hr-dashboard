@@ -114,7 +114,7 @@ export default function EmployeeDetails() {
 
         const data = await response.json()
 
-        // Add mock department and rating
+        // Adding mock department and rating
         const departments = ["Engineering", "Marketing", "HR", "Finance", "Sales", "Product", "Design"]
         const mockEmployee = {
           ...data,
